@@ -1,0 +1,137 @@
+h1 {
+  font-family: $base-font-family;
+  font-weight: $font-weight-extralight;
+  font-size: 1.7em;
+  color: $color-accent;
+  letter-spacing: 0.11;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: $base-font-family;
+  font-weight: $font-weight-regular;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: $color-dark-gray;
+  letter-spacing: 0.11;
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: $base-font-family;
+  font-weight: $font-weight-light;
+  font-size: 1.1em;
+  line-height: 1em;
+  color: $color-mid-gray;
+  letter-spacing: 0.11;
+  margin: 0 0 40px 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+p, ol, ul {
+  font-family: $base-font-family;
+  font-weight: $font-weight-light;
+  font-size: 1.05em;
+  line-height: 1.5em;
+  color: $color-dark-gray;
+  letter-spacing: 0.11;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+small {
+  font-family: $base-font-family;
+  font-weight: $font-weight-light;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: $color-mid-gray;
+  letter-spacing: 0.11;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+}
+
+a {
+  font-family: $base-font-family;
+  font-weight: $font-weight-light;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: $color-light-blue;
+  text-decoration: none;
+  transition: all $base-animation-time;
+
+  &:hover {
+    color: darken($color-light-blue, 20%);
+    transition: all $base-animation-time;
+  }
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  p {
+    font-family: $base-font-family;
+    font-weight: $font-weight-regular;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    color: $color-accent;
+    letter-spacing: 0.11;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  cite {
+    font-family: $base-font-family;
+    font-weight: $font-weight-light;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: $color-dark-gray;
+    letter-spacing: 0.11;
+    margin: 0 0 35px 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+
+    &:before {
+      content: "- ";
+    }
+  }
+}
+
+/**
+ * Modifiers
+ */
+.text-left {
+  text-align: left;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-accent {
+  color: $color-accent;
+}
+
+.text-dark {
+  color: $color-dark-gray;
+}

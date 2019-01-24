@@ -1,0 +1,11 @@
+input[type="text"], input[type="email"], input[type="url"], textarea {
+  font-family: $base-font-family;
+  font-weight: $font-weight-light;
+  font-size: 1em;
+  color: $color-black;
+  border: 1px $color-mid-gray solid;
+  border-radius: $base-border-radius;
+  padding: 7px 15px;
+  margin: 5px 0 10px 0;
+  max-width: 100%;
+}

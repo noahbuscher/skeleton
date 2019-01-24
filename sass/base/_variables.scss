@@ -1,0 +1,56 @@
+/**
+ * Colors
+ */
+$color-black: #000;
+$color-light-gray: #F2F2F2;
+$color-mid-gray: #BFBFBF;
+$color-dark-gray: #282828;
+$color-white: #fff;
+
+$color-honey: #fba919;
+$color-accent: $color-honey;
+$color-light-blue: #0095d6;
+$color-dark-blue: #1a65b0;
+$color-green: #2fab4a;
+$color-red: #a72925;
+$color-orange: #f47920;
+
+// Off-brand colors
+$color-purple: #9013FE;
+$color-teal: #50E3C2;
+
+/**
+ * Layout
+ */
+$max-width: 960px;
+$grid-gutter-width: 40px;
+
+/**
+ * Typography
+ */
+$base-font-family: 'Open Sans', sans-serif;
+$font-weight-extralight: 300;
+$font-weight-light: 400;
+$font-weight-regular: 600;
+$font-weight-bold: 700;
+
+/*
+ * Shadows
+ */
+$base-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+/**
+ * Borders
+ */
+$base-border-radius: 7px;
+
+/**
+ * Animations
+ */
+$base-animation-time: 200ms;
+
+/**
+ * Breakpoints
+ */
+$mq-phone: 420px;
+$mq-tablet: 970px;

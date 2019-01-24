@@ -1,0 +1,31 @@
+/*
+Theme Name: Insight
+Theme URI: https://github.com/BriteBee/insight
+Author: Noah Buscher
+Author URI: https://noahbuscher.com
+Description: Insight Thermography theme.
+Requires at least: WordPress 4.9.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: honey
+Tags: simple, colorful, thermography, medical
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/**
+ * Base
+ */
+@import "./sass/base/_base";
+
+/**
+ * Compoments
+ */
+@import "./sass/components/_components";
+
+/**
+ * Pages
+ */
+@import "./sass/pages/_pages";

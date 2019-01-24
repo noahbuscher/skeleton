@@ -1,0 +1,48 @@
+.pagination {
+   display: flex;
+   flex-direction: row;
+   max-width: $max-width;
+   margin-top: 20px;
+   width: 100%;
+
+   @media only screen and (max-width: $mq-tablet) {
+     margin-top: 30px;
+   }
+
+   .pagination-link {
+     flex: 1 1 auto;
+   }
+}
+
+.wp-block-columns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .wp-block-column {
+    flex: 1;
+    margin-right: $grid-gutter-width;
+
+    @media only screen and (max-width: $mq-tablet) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      @media only screen and (max-width: $mq-tablet) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mq-tablet) {
+    flex-direction: column;
+
+    div[class^="col"] {
+      flex: 1 1 auto;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+button, input[type="submit"], .btn {
+  font-family: $base-font-family;
+  font-weight: $font-weight-light;
+  font-size: 0.8em;
+  letter-spacing: 0.5;
+  color: $color-white;
+  background: $color-accent;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+  transition: all $base-animation-time;
+  display: inline-block;
+
+  &:hover {
+    color: $color-white;
+    background-color: darken($color-accent, 5%);
+    transition: all $base-animation-time;
+    cursor: pointer;
+  }
+
+  &.pressed {
+    background-color: darken($color-accent, 5%);
+    transition: all $base-animation-time;
+  }
+}
+
+.btn-pill {
+  border-radius: 30px;
+  padding: 12px 32px;
+}
+
+.btn-dark {
+  background-color: $color-dark-gray;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: darken($color-dark-gray, 5%);
+    transition: all $base-animation-time;
+  }
+}
+
+.btn-light {
+  background-color: $color-white;
+  color: $color-dark-gray;
+
+  &:hover {
+    color: $color-dark-gray;
+    background-color: darken($color-white, 5%);
+    transition: all $base-animation-time;
+  }
+}
+
+.btn-blue {
+  background-color: $color-light-blue;
+
+  &:hover {
+    background-color: darken($color-light-blue, 5%);
+    transition: all $base-animation-time;
+  }
+}

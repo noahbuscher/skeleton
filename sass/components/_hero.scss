@@ -1,0 +1,133 @@
+.hero {
+  padding: 200px;
+  background-color: $color-accent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &.hero-overlay {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &.hero-slim {
+    padding: (100px + 70px) 200px 100px 200px;
+    height: auto;
+
+    @media only screen and (max-width: $mq-tablet) {
+      padding: (80px + 70px) 40px 80px 40px;
+    }
+
+    h1 {
+      font-size: 2.7em;
+
+      @media only screen and (max-width: $mq-tablet) {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  &.hero-media {
+    padding: (60px + 70px) 200px 60px 200px;
+    height: auto;
+    background-position: top center;
+
+    @media only screen and (max-width: $mq-tablet) {
+      padding: (30px + 70px) 40px 30px 40px;
+    }
+
+    h1 {
+      font-size: 2.7em;
+
+      @media only screen and (max-width: $mq-tablet) {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .hero-image {
+    height: 200px;
+    width: auto;
+
+    @media only screen and (max-width: $mq-tablet) {
+      height: 100px;
+      width: auto;
+    }
+  }
+
+  &.hero-post {
+    padding: (120px + 70px) 200px 120px 200px;
+    height: auto;
+
+    @media only screen and (max-width: $mq-tablet) {
+      padding: (80px + 70px) 40px 40px 40px;
+    }
+  }
+
+  &.hero-white {
+    background-color: $color-white;
+  }
+
+  @media only screen and (max-width: $mq-tablet) {
+    padding: 100px 20px;
+  }
+
+  .hero-inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    z-index: 50;
+    width: 100%;
+
+    .hero-large {
+      font-size: 3em;
+      line-height: 1em;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-box {
+      padding: 20px;
+      border-radius: $base-border-radius;
+      background-color: rgba(255, 255, 255, .93);
+      box-shadow: $base-box-shadow;
+      display: flex;
+      align-items: center;
+
+      @media only screen and (max-width: $mq-tablet) {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      h1 {
+        flex: 2 1 auto;
+
+        @media only screen and (max-width: $mq-tablet) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .hero-box-action {
+        flex: 1 1 auto;
+        text-align: right;
+
+
+        @media only screen and (max-width: $mq-tablet) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

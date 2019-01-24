@@ -1,0 +1,39 @@
+.footer-details {
+  font-family: $base-font-family;
+  font-weight: $font-weight-extralight;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: $color-white;
+  letter-spacing: 0.11;
+  padding: 0;
+  text-decoration: none;
+  margin: 0 $grid-gutter-width 0 0;
+  display: inline-block;
+
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    .menu-item {
+      display: inline-block;
+
+      a {
+        font-family: $base-font-family;
+        font-weight: $font-weight-extralight;
+        font-size: 1em;
+        line-height: 1.5em;
+        color: $color-white;
+        letter-spacing: 0.11;
+        padding: 0;
+        margin: 0 0 0 20px;
+        display: inline-block;
+
+        @media only screen and (max-width: $mq-tablet) {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
