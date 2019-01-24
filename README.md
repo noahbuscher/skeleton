@@ -1,0 +1,2 @@
+# skeleton
+Barebones WordPress theme
