@@ -102,6 +102,10 @@
     }
   }
 
+  &.row-margin-extra {
+    margin-bottom: $grid-gutter-width*1.5;
+  }
+
   &.row-cascade {
     flex-flow: row wrap;
 
@@ -126,5 +130,9 @@
         }
       }
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

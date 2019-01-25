@@ -1,0 +1,19 @@
+.infobar {
+  max-width: $max-width;
+  margin: 0 auto;
+  background: $color-white;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  position: relative;
+  margin-top: -45px;
+
+  .infobar-container {
+    padding: 20px 35px;
+
+    p {
+      font-size: 1em;
+      margin-bottom: 0;
+      color: darken($color-light-gray, 30%);
+    }
+  }
+}

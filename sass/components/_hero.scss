@@ -9,6 +9,10 @@
   position: relative;
   z-index: -3;
 
+  &.hero-fixedbg {
+    background-attachment: fixed;
+  }
+
   &.hero-overlay {
     &:before {
       content: "";
@@ -17,7 +21,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -26,11 +30,11 @@
   }
 
   &.hero-slim {
-    padding: (100px + 70px) 200px 100px 200px;
+    padding: 100px 200px;
     height: auto;
 
     @media only screen and (max-width: $mq-tablet) {
-      padding: (80px + 70px) 40px 80px 40px;
+      padding: 80px 40px;
     }
 
     h1 {
@@ -71,11 +75,11 @@
   }
 
   &.hero-post {
-    padding: (120px + 70px) 200px 120px 200px;
+    padding: 120px 200px;
     height: auto;
 
     @media only screen and (max-width: $mq-tablet) {
-      padding: (80px + 70px) 40px 40px 40px;
+      padding: 40px;
     }
   }
 

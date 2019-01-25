@@ -23,7 +23,7 @@
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js" charset="utf-8"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&Sanchez:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Sanchez:400" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">

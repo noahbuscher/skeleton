@@ -1,0 +1,192 @@
+.card {
+  background-color: $color-white;
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  position: relative;
+  margin-bottom: 40px;
+  bottom: 0;
+  transition: all $base-animation-time;
+
+  @media only screen and (max-width: $mq-tablet) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    bottom: 4px;
+    transition: all $base-animation-time;
+  }
+
+  .card-accent {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 5px;
+    left: 0;
+    right: 0;
+    background-color: $color-light-blue;
+    border-bottom-left-radius: $base-border-radius;
+    border-bottom-right-radius: $base-border-radius;
+  }
+
+  .card-icon {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: -20px;
+    right: -20px;
+    border-radius: 100%;
+    background: linear-gradient($color-light-blue, darken($color-light-blue, 6%));
+    box-shadow: $base-box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @media only screen and (max-width: $mq-tablet) {
+      display: none;
+    }
+
+    img {
+      height: 24px;
+      width: auto;
+    }
+  }
+
+  .card-image-link {
+    height: 200px;
+    width: 100%;
+    display: block;
+
+    .card-image {
+      background-color: $color-white;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+    }
+  }
+
+  .card-inner {
+    padding: 30px;
+
+    .card-title {
+      font-family: $base-font-family;
+      font-weight: $font-weight-light;
+      font-size: 1.5em;
+      line-height: 1.3em;
+      color: $color-dark-gray;
+      letter-spacing: 0.11;
+      margin: 0 0 5px 0;
+      padding: 0;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .card-description {
+      font-family: $base-font-family;
+      font-weight: $font-weight-light;
+      font-size: 1em;
+      line-height: 1.4em;
+      color: $color-mid-gray;
+      letter-spacing: 0.11;
+      margin: 0 0 15px 0;
+      padding: 0;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 18px;
+
+      &.card-description-tall {
+        height: 2em;
+
+        @media only screen and (max-width: $mq-tablet) {
+          height: auto;
+        }
+      }
+    }
+
+    .card-link {
+      font-family: $base-font-family;
+      font-weight: $font-weight-light;
+      font-style: italic;
+      font-size: 1em;
+      line-height: 1.4em;
+      color: $color-mid-gray;
+      letter-spacing: 0.11;
+      margin: 0 0 15px 0;
+      padding: 0;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 15px;
+      transition: all $base-animation-time;
+
+      &:hover {
+        color: $color-light-blue;
+        transition: all $base-animation-time;
+      }
+    }
+  }
+
+  &.card-blue {
+    .card-accent {
+      background-color: $color-light-blue;
+    }
+
+    .card-icon {
+     background: linear-gradient($color-light-blue, darken($color-light-blue, 6%));
+    }
+  }
+
+  &.card-green {
+    .card-accent {
+      background-color: $color-green;
+    }
+
+    .card-icon {
+     background: linear-gradient($color-green, darken($color-green, 6%));
+    }
+  }
+
+  &.card-yellow {
+    .card-accent {
+      background-color: $color-accent;
+    }
+
+    .card-icon {
+     background: linear-gradient($color-accent, darken($color-accent, 6%));
+    }
+  }
+
+  &.card-orange {
+    .card-accent {
+      background-color: $color-orange;
+    }
+
+    .card-icon {
+     background: linear-gradient($color-orange, darken($color-orange, 6%));
+    }
+  }
+
+  &.card-purple {
+    .card-accent {
+      background-color: $color-purple;
+    }
+
+    .card-icon {
+     background: linear-gradient($color-purple, darken($color-purple, 6%));
+    }
+  }
+
+  &.card-teal {
+    .card-accent {
+      background-color: $color-teal;
+    }
+
+    .card-icon {
+     background: linear-gradient($color-teal, darken($color-teal, 6%));
+    }
+  }
+}
