@@ -10,12 +10,16 @@
           </div>
           <div class="col-1 text-mobile-centered">
             <span class="footer-details text-white">
-              <?php echo $contact_options['address'] ?>
+              <?php if($contact_options['phone']) : ?>
+                <?php echo $contact_options['address'] ?>
+              <? endif; ?>
             </span>
             <span class="footer-details text-white">
-              <a href="tel:<?php echo $contact_options['phone'] ?>" style="margin: 0;" class="text-white">
-                <?php echo $contact_options['phone'] ?>
-              </a>
+              <?php if($contact_options['phone']) : ?>
+                <a href="tel:<?php echo $contact_options['phone'] ?>" style="margin: 0;" class="text-white">
+                  <?php echo $contact_options['phone'] ?>
+                </a>
+              <? endif; ?>
             </span>
           </div>
           <div class="col-1 text-right text-left-mobile">

@@ -1,27 +1,54 @@
 header {
-  padding: 20px 0;
   width: 100%;
-  position: fixed;
-  background: $color-white;
-  z-index: 100;
   box-shadow: $base-box-shadow;
+  background: $color-white;
+  padding: 10px;
+  z-index: 10;
 
   @media only screen and (max-width: $mq-tablet) {
     padding: 20px 20px;
   }
 
   .header-inner {
-    display: flex;
-    flex-direction: row;
-    max-width: $max-width;
-    margin: 0 auto;
+    margin-bottom: 0;
+    position: relative;
+    z-index: initial;
+    background: $color-white;
+
+    .shadow {
+      height: 110px;
+      width: 110px;
+      border-radius: 100%;
+      box-shadow: $base-box-shadow;
+      content: '';
+      position: absolute;
+      z-index: -2;
+    }
 
     .logo {
-      flex: 1 1 auto;
+      height: 70px;
+      width: 110px;
+      border-radius: 100%;
+      display: block;
+      z-index: 10;
+      position: relative;
 
-      .logo-img {
-        height: 35px;
-        width: auto;
+      .logo-border {
+        padding: 10px;
+        height: 110px;
+        width: 110px;
+        border-radius: 100%;
+        background: $color-white;
+        position: absolute;
+
+        .logo-img {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
       }
     }
 
@@ -62,7 +89,6 @@ header {
     }
 
     nav {
-      flex: 3 1 auto;
       text-align: center;
       display: flex;
       align-items: center;
@@ -96,10 +122,10 @@ header {
                 font-family: $base-font-family;
                 font-weight: $font-weight-light;
                 font-size: 0.9em;
-                font-weight: 600;
-                color: $color-dark-gray;
+                font-weight: $font-weight-light;
+                color: $color-dark-blue;
                 text-decoration: none;
-                margin-left: 25px;
+                margin: 0 10px;
 
                 @media only screen and (max-width: $mq-tablet) {
                   font-size: 1.3em;
@@ -125,7 +151,6 @@ header {
     }
 
     .phone {
-      flex: 1 1 auto;
       text-align: right;
       justify-content: flex-end;
       display: flex;

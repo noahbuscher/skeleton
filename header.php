@@ -20,11 +20,10 @@
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/particles.min.js" charset="utf-8"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js" charset="utf-8"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&Sanchez:400" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
@@ -39,35 +38,39 @@
     <?php $contact_options = get_option('skeleton_theme_contact_options'); ?>
 
     <header id="nav">
-      <div class="header-inner">
-        <div class="logo">
-          <a href="/">
-            <?php
-              $custom_logo_id = get_theme_mod('custom_logo');
-              $logo = wp_get_attachment_image_src($custom_logo_id , 'full');
-              if (has_custom_logo()) {
-                echo '<img class="logo-img" src="'. esc_url($logo[0]) .'" alt="'. get_bloginfo('name') .' logo">';
-              } else {
-                echo '<h1>'. get_bloginfo('name') .'</h1>';
-              }
-            ?>
-          </a>
-        </div>
-        <div class="menu-open">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/menu.png" />
-        </div>
-        <div class="menu-close">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/close.png" />
-        </div>
-        <nav>
-          <div class="nav-inner">
-            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+        <div class="header-inner row row-block">
+          <div class="shadow"></div>
+          <div class="col-1 logo">
+            <div class="logo-border">
+              <a href="/">
+                <?php
+                  $custom_logo_id = get_theme_mod('custom_logo');
+                  $logo = wp_get_attachment_image_src($custom_logo_id , 'full');
+                  if (has_custom_logo()) {
+                    echo '<div class="logo-img" style="background-image: url('. esc_url($logo[0]) .')" alt="'. get_bloginfo('name') .' logo"></div>';
+                  } else {
+                    echo '<h1>'. get_bloginfo('name') .'</h1>';
+                  }
+                ?>
+              </a>
+            </div>
           </div>
-        </nav>
-        <div class="phone">
-          <a class="text-accent" href="tel:<?php echo $contact_options['phone'] ?>">
-            <?php echo $contact_options['phone'] ?>
-          </a>
-         </div>
-      </div>
+          <div class="menu-open">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/menu.png" />
+          </div>
+          <div class="menu-close">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/close.png" />
+          </div>
+          <nav class="col-3">
+            <div class="nav-inner">
+              <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
+            </div>
+          </nav>
+          <div class="col-1 phone">
+            <a class="btn btn-navy" href="#">
+              Take an Action
+            </a>
+           </div>
+        </div>
+
     </header>

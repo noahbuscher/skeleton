@@ -7,13 +7,14 @@ $color-mid-gray: #BFBFBF;
 $color-dark-gray: #282828;
 $color-white: #fff;
 
-$color-honey: #fba919;
-$color-accent: $color-honey;
-$color-light-blue: #0095d6;
-$color-dark-blue: #1a65b0;
+$color-light-blue: #91B3BB;
+$color-dark-blue: #2B4050;
+$color-tan: #E6E1DF;
 $color-green: #2fab4a;
 $color-red: #a72925;
 $color-orange: #f47920;
+
+$color-accent: $color-light-blue;
 
 // Off-brand colors
 $color-purple: #9013FE;
@@ -29,6 +30,11 @@ $grid-gutter-width: 40px;
  * Typography
  */
 $base-font-family: 'Open Sans', sans-serif;
+$base-serif-font-family: 'Sanchez', serif;
+
+$base-header-font-family: $base-serif-font-family;
+$base-body-font-family: $base-font-family;
+
 $font-weight-extralight: 300;
 $font-weight-light: 400;
 $font-weight-regular: 600;
@@ -37,7 +43,7 @@ $font-weight-bold: 700;
 /*
  * Shadows
  */
-$base-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+$base-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
 /**
  * Borders

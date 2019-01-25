@@ -1,7 +1,7 @@
 h1 {
-  font-family: $base-font-family;
+  font-family: $base-header-font-family;
   font-weight: $font-weight-extralight;
-  font-size: 1.7em;
+  font-size: 3em;
   color: $color-accent;
   letter-spacing: 0.11;
   margin: 0;
@@ -10,19 +10,19 @@ h1 {
 }
 
 h2 {
-  font-family: $base-font-family;
-  font-weight: $font-weight-regular;
-  font-size: 1.5em;
-  line-height: 1.4em;
+  font-family: $base-body-font-family;
+  font-weight: 200;
+  font-size: 1.3em;
+  line-height: 1.6em;
   color: $color-dark-gray;
   letter-spacing: 0.11;
-  margin: 0 0 10px 0;
+  margin: 5px 0 10px 0;
   padding: 0;
   text-decoration: none;
 }
 
 h3 {
-  font-family: $base-font-family;
+  font-family: $base-header-font-family;
   font-weight: $font-weight-light;
   font-size: 1.1em;
   line-height: 1em;
@@ -34,7 +34,7 @@ h3 {
 }
 
 p, ol, ul {
-  font-family: $base-font-family;
+  font-family: $base-body-font-family;
   font-weight: $font-weight-light;
   font-size: 1.05em;
   line-height: 1.5em;
@@ -46,7 +46,7 @@ p, ol, ul {
 }
 
 small {
-  font-family: $base-font-family;
+  font-family: $base-body-font-family;
   font-weight: $font-weight-light;
   font-size: 0.8em;
   line-height: 1.5em;
@@ -59,7 +59,7 @@ small {
 }
 
 a {
-  font-family: $base-font-family;
+  font-family: $base-body-font-family;
   font-weight: $font-weight-light;
   font-size: 1em;
   line-height: 1.5em;
@@ -79,7 +79,7 @@ blockquote {
   border: 0;
 
   p {
-    font-family: $base-font-family;
+    font-family: $base-serif-font-family;
     font-weight: $font-weight-regular;
     font-size: 1.6em;
     line-height: 1.4em;
@@ -91,7 +91,7 @@ blockquote {
   }
 
   cite {
-    font-family: $base-font-family;
+    font-family: $base-body-font-family;
     font-weight: $font-weight-light;
     font-size: 1em;
     line-height: 1.4em;

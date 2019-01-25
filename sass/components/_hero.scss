@@ -4,10 +4,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
   display: flex;
   align-items: center;
   position: relative;
+  z-index: -3;
 
   &.hero-overlay {
     &:before {
@@ -19,6 +19,10 @@
       bottom: 0;
       background: rgba(0, 0, 0, 0.7);
     }
+  }
+
+  .hero-actions {
+    margin-top: 25px;
   }
 
   &.hero-slim {
@@ -39,12 +43,12 @@
   }
 
   &.hero-media {
-    padding: (60px + 70px) 200px 60px 200px;
+    padding: 60px 200px;
     height: auto;
     background-position: top center;
 
     @media only screen and (max-width: $mq-tablet) {
-      padding: (30px + 70px) 40px 30px 40px;
+      padding: 30px 40px 30px 40px;
     }
 
     h1 {

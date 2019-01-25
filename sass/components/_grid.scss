@@ -11,118 +11,118 @@
   &.container-dark {
     background-color: $color-dark-gray;
   }
+}
 
-  .row {
-    max-width: $max-width;
-    margin: 0 auto $grid-gutter-width auto;
-    display: flex;
-    flex-direction: row;
+.row {
+  max-width: $max-width;
+  margin: 0 auto $grid-gutter-width auto;
+  display: flex;
+  flex-direction: row;
 
-    /**
-     * Col sizes
-     */
-    .col-1 {
-      flex: 1;
-      margin-right: $grid-gutter-width;
-    }
+  /**
+   * Col sizes
+   */
+  .col-1 {
+    flex: 1;
+    margin-right: $grid-gutter-width;
+  }
 
-    .col-2 {
-      flex: 2;
-      margin-right: $grid-gutter-width;
-    }
+  .col-2 {
+    flex: 2;
+    margin-right: $grid-gutter-width;
+  }
 
-    .col-3 {
-      flex: 3;
-      margin-right: $grid-gutter-width;
-    }
+  .col-3 {
+    flex: 3;
+    margin-right: $grid-gutter-width;
+  }
 
-    .col-4 {
-      flex: 4;
-      margin-right: $grid-gutter-width;
-    }
+  .col-4 {
+    flex: 4;
+    margin-right: $grid-gutter-width;
+  }
 
-    .col-5 {
-      flex: 5;
-      margin-right: $grid-gutter-width;
-    }
+  .col-5 {
+    flex: 5;
+    margin-right: $grid-gutter-width;
+  }
 
-    .col-6 {
-      flex: 6;
-      margin-right: $grid-gutter-width;
-    }
+  .col-6 {
+    flex: 6;
+    margin-right: $grid-gutter-width;
+  }
 
-    @media only screen and (max-width: $mq-tablet) {
-      flex-direction: column;
-
-      div[class^="col"] {
-        flex: 1 1 auto;
-        max-width: 100%;
-      }
-    }
+  @media only screen and (max-width: $mq-tablet) {
+    flex-direction: column;
 
     div[class^="col"] {
-      @media only screen and (max-width: $mq-tablet) {
-        margin-right: 0;
-        margin-bottom: 30px;
-      }
-
-      &:last-child {
-        margin-right: 0;
-
-        @media only screen and (max-width: $mq-tablet) {
-          margin-bottom: 0;
-        }
-      }
+      flex: 1 1 auto;
+      max-width: 100%;
     }
+  }
 
-    /**
-     * Row styles
-     */
-    &.row-centered {
-      align-items: center;
-    }
-
-    &.row-header {
+  div[class^="col"] {
+    @media only screen and (max-width: $mq-tablet) {
+      margin-right: 0;
       margin-bottom: 30px;
     }
 
-    &.row-footer {
-      margin-top: 60px;
-      align-items: flex-end;
+    &:last-child {
+      margin-right: 0;
 
       @media only screen and (max-width: $mq-tablet) {
-        align-items: center;
+        margin-bottom: 0;
       }
     }
+  }
 
-    &.row-mobile-centered {
-      @media only screen and (max-width: $mq-tablet) {
-        align-items: center;
-      }
+  /**
+   * Row styles
+   */
+  &.row-centered {
+    align-items: center;
+  }
+
+  &.row-header {
+    margin-bottom: 30px;
+  }
+
+  &.row-footer {
+    margin-top: 60px;
+    align-items: flex-end;
+
+    @media only screen and (max-width: $mq-tablet) {
+      align-items: center;
+    }
+  }
+
+  &.row-mobile-centered {
+    @media only screen and (max-width: $mq-tablet) {
+      align-items: center;
+    }
+  }
+
+  &.row-cascade {
+    flex-flow: row wrap;
+
+    @media only screen and (max-width: $mq-tablet) {
+      flex-flow: column;
     }
 
-    &.row-cascade {
-      flex-flow: row wrap;
+    div[class^="col"] {
+      flex: 1 0 calc(50% - 40px);
 
       @media only screen and (max-width: $mq-tablet) {
-        flex-flow: column;
+        flex: 1 1 auto;
+        margin-right: 0;
       }
 
-      div[class^="col"] {
+      &:nth-child(2n) {
+        margin-right: 0;
         flex: 1 0 calc(50% - 40px);
 
         @media only screen and (max-width: $mq-tablet) {
           flex: 1 1 auto;
-          margin-right: 0;
-        }
-
-        &:nth-child(2n) {
-          margin-right: 0;
-          flex: 1 0 calc(50% - 40px);
-
-          @media only screen and (max-width: $mq-tablet) {
-            flex: 1 1 auto;
-          }
         }
       }
     }
