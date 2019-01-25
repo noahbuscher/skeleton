@@ -2,19 +2,20 @@
  get_header();
 ?>
 
-<?php if (($img = has_post_thumbnail())): ?>
+<?php if (get_option('page_for_posts')) : ?>
+  <?php $img = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('page_for_posts')), 'full'); ?>
   <section
     class="hero hero-slim hero-white"
-    style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>);"
+    style="background-image: url(<?php echo $img[0]; ?>"
   >
     <div class="hero-inner">
-      <h1 class="text-centered text-dark"><?php echo get_the_title(get_option('page_for_posts', true)); ?></h1>
+      <h1 class="text-centered text-white text-shadow"><?php echo get_the_title(get_option('page_for_posts', true)); ?></h1>
     </div>
   </section>
 <?php else: ?>
   <section class="hero hero-slim hero-white">
     <div class="hero-inner">
-      <h1 class="text-centered text-dark"><?php echo get_the_title(get_option('page_for_posts', true)); ?></h1>
+      <h1 class="text-centered text-white text-shadow"><?php echo get_the_title(get_option('page_for_posts', true)); ?></h1>
     </div>
   </section>
 <?php endif; ?>
