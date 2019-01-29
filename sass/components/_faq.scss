@@ -1,0 +1,41 @@
+.faq {
+  .faq-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .faq-question  {
+      flex: 6;
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .faq-actions {
+      flex: 1;
+      text-align: right;
+
+      .faq-toggle {
+        &:before {
+          content: "↓";
+        }
+
+        &.faq-toggle-active {
+          &:before {
+            content: "↑";
+          }
+        }
+
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+
+  .faq-drop {
+    padding: 20px 0 0 0;
+    display: none;
+  }
+}

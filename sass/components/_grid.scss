@@ -9,7 +9,7 @@
   }
 
   &.container-dark {
-    background-color: $color-dark-gray;
+    background-color: $color-dark-blue;
   }
 }
 
@@ -104,6 +104,12 @@
 
   &.row-margin-extra {
     margin-bottom: $grid-gutter-width*1.5;
+  }
+
+  &.row-block {
+    @media only screen and (max-width: $mq-tablet) {
+      flex-direction: row;
+    }
   }
 
   &.row-cascade {

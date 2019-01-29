@@ -6,6 +6,7 @@
   margin-bottom: 40px;
   bottom: 0;
   transition: all $base-animation-time;
+  overflow: none;
 
   @media only screen and (max-width: $mq-tablet) {
     margin-bottom: 0;
@@ -14,6 +15,13 @@
   &:hover {
     bottom: 4px;
     transition: all $base-animation-time;
+  }
+
+  &.card-nohover {
+    &:hover {
+      bottom: 0;
+      transition: all $base-animation-time;
+    }
   }
 
   .card-accent {
@@ -66,6 +74,21 @@
       width: 100%;
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
+    }
+  }
+
+  .card-header {
+    background-color: $color-light-gray;
+    padding: 20px;
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      margin-bottom: 5px;
     }
   }
 

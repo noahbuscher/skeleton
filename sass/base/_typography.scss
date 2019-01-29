@@ -84,6 +84,23 @@ small {
   display: block;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $color-light-gray;
+}
+
+.mono {
+  font-family: $base-mono-font-family;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: $color-mid-gray;
+  letter-spacing: 0.11;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 a {
   font-family: $base-body-font-family;
   font-weight: $font-weight-light;

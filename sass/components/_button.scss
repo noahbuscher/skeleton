@@ -58,10 +58,10 @@ button, input[type="submit"], .btn {
 
 .btn-light {
   background-color: $color-white;
-  color: $color-dark-gray;
+  color: $color-dark-blue;
 
   &:hover {
-    color: $color-dark-gray;
+    color: $color-dark-blue;
     background-color: darken($color-white, 5%);
   }
 }

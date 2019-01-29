@@ -1,0 +1,21 @@
+.faces {
+  display: flex;
+  flex-direction: row;
+
+  .face {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+
+    .face-img {
+      width: 180px;
+      height: 180px;
+      background-position: center;;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 2px solid $color-white;
+      border-radius: 100%;
+      box-shadow: $base-box-shadow;
+    }
+  }
+}

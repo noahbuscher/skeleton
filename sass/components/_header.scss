@@ -6,7 +6,7 @@ header {
   z-index: 10;
 
   @media only screen and (max-width: $mq-tablet) {
-    padding: 20px 20px;
+    padding: 10px 20px;
   }
 
   .header-inner {
@@ -23,6 +23,10 @@ header {
       content: '';
       position: absolute;
       z-index: -2;
+
+      @media only screen and (max-width: $mq-tablet) {
+        display: none;
+      }
     }
 
     .logo {
@@ -32,6 +36,12 @@ header {
       display: block;
       z-index: 10;
       position: relative;
+
+      @media only screen and (max-width: $mq-tablet) {
+        flex: 1;
+        height: 110px;
+        margin-bottom: 0;
+      }
 
       .logo-border {
         padding: 10px;
@@ -81,9 +91,9 @@ header {
 
       @media only screen and (max-width: $mq-tablet) {
         position: absolute;
-        top: 30px;
-        right: 20px;
-        z-index: 100;
+        top: 45px;
+        right: 0px;
+        z-index: 10001;
         color: $color-black;
       }
     }
@@ -105,10 +115,11 @@ header {
         }
 
         .menu-header-container {
-          .menu {
+          .menu, .sub-menu {
             list-style: none;
             margin: 0;
             padding: 0;
+            display: relative;
 
             .menu-item {
               display: inline-block;
@@ -133,6 +144,29 @@ header {
                   font-weight: 700;
                 }
               }
+
+            }
+          }
+
+          .sub-menu {
+            display: none;
+            position: absolute;
+            text-align: left;
+            background-color: $color-white;
+            box-shadow: $base-box-shadow;
+            border-radius: $base-border-radius;
+            padding: 10px;
+            margin-top: 5px;
+
+            @media only screen and (max-width: $mq-tablet) {
+              display: inline-block;
+              position: relative;
+              text-align: center;
+              background-color: none;
+              box-shadow: none;
+              border-radius: 0;
+              padding: 0;
+              margin: 30px 0 0 0;
             }
           }
         }
@@ -140,13 +174,15 @@ header {
 
       @media only screen and (max-width: $mq-tablet) {
         display: none;
-        flex: none;
+        flex: none !important;
+        margin: 0  !important;
         position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         background: rgba(255, 255, 255, 0.9);
+        z-index: 1000;
       }
     }
 
