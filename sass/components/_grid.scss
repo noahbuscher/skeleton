@@ -11,6 +11,10 @@
   &.container-dark {
     background-color: $color-dark-blue;
   }
+
+  &.container-nobottompad {
+    padding-bottom: 0;
+  }
 }
 
 .row {
@@ -140,5 +144,11 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.hide-on-mobile {
+  @media only screen and (max-width: $mq-tablet) {
+    display: none;
   }
 }

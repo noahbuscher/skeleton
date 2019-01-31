@@ -14,19 +14,6 @@
    }
 }
 
-.featured-image {
-  width: 60%;
-  height: auto;
-  border-radius: $base-border-radius;
-  filter: grayscale(100%);
-  transition: all $base-animation-time;
-
-  &:hover {
-    filter: grayscale(0);
-    transition: all $base-animation-time;
-  }
-}
-
 .wp-block-columns {
   display: flex;
   flex-direction: row;

@@ -8,21 +8,7 @@
               &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>
             </span>
           </div>
-          <div class="col-1 text-mobile-centered">
-            <span class="footer-details text-white">
-              <?php if($contact_options['phone']) : ?>
-                <?php echo $contact_options['address'] ?>
-              <? endif; ?>
-            </span>
-            <span class="footer-details text-white">
-              <?php if($contact_options['phone']) : ?>
-                <a href="tel:<?php echo $contact_options['phone'] ?>" style="margin: 0;" class="text-white">
-                  <?php echo $contact_options['phone'] ?>
-                </a>
-              <? endif; ?>
-            </span>
-          </div>
-          <div class="col-1 text-right text-left-mobile">
+          <div class="col-2 text-right text-left-mobile">
             <span class="footer-details text-white">
               <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
             </span>

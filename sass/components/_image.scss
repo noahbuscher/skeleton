@@ -1,0 +1,19 @@
+.img-rounded {
+  border-radius: 7px;
+  box-shadow: $base-box-shadow;
+}
+
+.featured-image {
+  width: 60%;
+  height: auto;
+}
+
+.img-hover-color {
+  filter: grayscale(100%);
+  transition: all $base-animation-time;
+
+  &:hover {
+    filter: grayscale(0);
+    transition: all $base-animation-time;
+  }
+}

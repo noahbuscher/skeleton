@@ -39,13 +39,13 @@ header {
 
       @media only screen and (max-width: $mq-tablet) {
         flex: 1;
-        height: 110px;
+        height: 115px;
         margin-bottom: 0;
       }
 
       .logo-border {
         padding: 10px;
-        height: 110px;
+        height: 115px;
         width: 110px;
         border-radius: 100%;
         background: $color-white;
@@ -54,7 +54,7 @@ header {
         .logo-img {
           width: 100%;
           height: 100%;
-          border-radius: 100%;
+          border-radius: 0%;
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -137,6 +137,7 @@ header {
                 color: $color-dark-blue;
                 text-decoration: none;
                 margin: 0 10px;
+                display: block;
 
                 @media only screen and (max-width: $mq-tablet) {
                   font-size: 1.3em;
@@ -158,6 +159,19 @@ header {
             padding: 10px;
             margin-top: 5px;
 
+            .menu-item {
+              display: block;
+              margin: 5px 0;
+
+              @media only screen and (max-width: $mq-tablet) {
+                margin-bottom: 30px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+
             @media only screen and (max-width: $mq-tablet) {
               display: inline-block;
               position: relative;
@@ -167,6 +181,7 @@ header {
               border-radius: 0;
               padding: 0;
               margin: 30px 0 0 0;
+              background-color: transparent;
             }
           }
         }

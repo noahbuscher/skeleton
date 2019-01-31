@@ -23,7 +23,7 @@ h2 {
 
 h3 {
   font-family: $base-serif-font-family;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2em;
   line-height: 1.3em;
   color: $color-dark-blue;
@@ -31,25 +31,31 @@ h3 {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   small {
     font-family: $base-serif-font-family;
     font-weight: 200;
-    font-size: 0.5em;
-    line-height: 0.7em;
+    font-size: 0.6em;
+    line-height: 1em;
     color: $color-light-blue;
     letter-spacing: 0.11;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    margin-top: 3px;
     margin-bottom: 5px;
+
+    a {
+      font-family: $base-serif-font-family;
+      font-weight: 200;
+    }
   }
 }
 
 h4 {
   font-family: $base-font-family;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.1em;
   line-height: 1.6em;
   color: $color-mid-gray;
@@ -167,6 +173,14 @@ blockquote {
   text-align: right;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-margintop {
+   margin-top: 5px;
+}
+
 .text-white {
   color: $color-white;
 }
@@ -175,10 +189,20 @@ blockquote {
   color: $color-accent;
 }
 
+.text-darkblue {
+  color: $color-dark-blue;
+}
+
 .text-dark {
   color: $color-dark-gray;
 }
 
 .text-shadow {
   text-shadow: $base-box-shadow;
+}
+
+.text-left-mobile {
+  @media only screen and (max-width: $mq-tablet) {
+    text-align: left;
+  }
 }
