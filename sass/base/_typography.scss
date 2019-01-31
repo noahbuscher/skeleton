@@ -32,6 +32,7 @@ h3 {
   padding: 0;
   text-decoration: none;
   margin-bottom: 30px;
+  text-transform: capitalize;
 
   small {
     font-family: $base-serif-font-family;
@@ -199,6 +200,12 @@ blockquote {
 
 .text-shadow {
   text-shadow: $base-box-shadow;
+}
+
+.text-centered-mobile {
+  @media only screen and (max-width: $mq-tablet) {
+    text-align: center;
+  }
 }
 
 .text-left-mobile {

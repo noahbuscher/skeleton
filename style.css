@@ -82,7 +82,8 @@ h3 {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-transform: capitalize; }
   h3 small {
     font-family: "Sanchez", serif;
     font-weight: 200;
@@ -221,6 +222,10 @@ blockquote {
 
 .text-shadow {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+
+@media only screen and (max-width: 970px) {
+  .text-centered-mobile {
+    text-align: center; } }
 
 @media only screen and (max-width: 970px) {
   .text-left-mobile {
@@ -432,8 +437,8 @@ header {
     z-index: initial;
     background: #fff; }
     header .header-inner .shadow {
-      height: 110px;
-      width: 110px;
+      height: 150px;
+      width: 150px;
       border-radius: 100%;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       content: '';
@@ -443,8 +448,8 @@ header {
         header .header-inner .shadow {
           display: none; } }
     header .header-inner .logo {
-      height: 70px;
-      width: 110px;
+      height: 80px;
+      width: 140px;
       border-radius: 100%;
       display: block;
       z-index: 10;
@@ -452,12 +457,12 @@ header {
       @media only screen and (max-width: 970px) {
         header .header-inner .logo {
           flex: 1;
-          height: 115px;
+          height: 120px;
           margin-bottom: 0; } }
       header .header-inner .logo .logo-border {
         padding: 10px;
-        height: 115px;
-        width: 110px;
+        height: 160px;
+        width: 152px;
         border-radius: 100%;
         background: #fff;
         position: absolute; }
@@ -908,6 +913,26 @@ input[type="text"], input[type="email"], input[type="url"], textarea {
   .img-hover-color:hover {
     filter: grayscale(0);
     transition: all 200ms; }
+
+/**
+ * Responsive YouTube embed by CSS Tricks
+ * https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+ */
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  min-height: 168.75 px;
+  min-width: 300px; }
+
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /**
  * Pages
