@@ -118,9 +118,14 @@ p, ol, ul {
   line-height: 1.5em;
   color: #BFBFBF;
   letter-spacing: 0.11;
-  margin: 0 0 15px 0;
   padding: 0;
   text-decoration: none; }
+
+ol, ul {
+  margin-left: 50px; }
+
+p {
+  margin: 0 0 15px 0; }
 
 small {
   font-family: "Open Sans", sans-serif;
@@ -230,6 +235,25 @@ blockquote {
 @media only screen and (max-width: 970px) {
   .text-left-mobile {
     text-align: left; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.anim-fadein {
+  opacity: 0;
+  animation: fadein 2s;
+  animation-fill-mode: forwards; }
+
+.anim-stagger-1 {
+  animation-delay: 1s; }
+
+.anim-stagger-2 {
+  animation-delay: 2s; }
+
+.anim-stagger-3 {
+  animation-delay: 3s; }
 
 /**
  * Compoments
