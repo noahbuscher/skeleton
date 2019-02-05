@@ -91,6 +91,10 @@
     margin-bottom: 30px;
   }
 
+  &.row-nobottompad {
+    margin-bottom: 0;
+  }
+
   &.row-footer {
     margin-top: 60px;
     align-items: flex-end;

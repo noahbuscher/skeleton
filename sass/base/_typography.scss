@@ -121,7 +121,7 @@ a {
   font-size: 1em;
   line-height: 1.5em;
   color: $color-light-blue;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all $base-animation-time;
 
   &:hover {
@@ -207,6 +207,10 @@ blockquote {
 
 .text-shadow {
   text-shadow: $base-box-shadow;
+}
+
+.text-nocaps {
+  text-transform: none;
 }
 
 .text-centered-mobile {
